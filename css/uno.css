@@ -1000,7 +1000,7 @@ blockquote {
   font-family:  "Raleway",Verdana,sans-serif,微软雅黑, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   font-weight: lighter;
   /*font-style: italic;*/
-  font-size: 14px;
+  font-size: 12px;
   /*text-align: center;*/ }
   blockquote p:last-child {
     margin-bottom: 0; }
@@ -1054,7 +1054,7 @@ code {
 
 .intro {
   font-family: "Roboto Slab", serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: lighter;
   color: #999999; }
 
