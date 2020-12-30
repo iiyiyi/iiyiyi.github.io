@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      &lt;Dijkstra&gt; POJ 1062 Expensive Betrothal | OnE 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="Yi Cai">
+    
+    
+
+    <meta name="description" content="Link:poj.org/problem?id=1062   Brief DescriptionYou would like to trade an item $I_i$ with a person. You can either pay $P_i$ for this item, or you can give this person an item $I_j$ and pay $S_{ji}$">
+<meta name="keywords" content="Dijkstra">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&lt;Dijkstra&gt; POJ 1062 Expensive Betrothal | OnE">
+<meta property="og:url" content="http://yoursite.com/child/2020/12/30/poj1062/index.html">
+<meta property="og:site_name" content="OnE">
+<meta property="og:description" content="Link:poj.org/problem?id=1062   Brief DescriptionYou would like to trade an item $I_i$ with a person. You can either pay $P_i$ for this item, or you can give this person an item $I_j$ and pay $S_{ji}$">
+<meta property="og:locale" content="EN/CN">
+<meta property="og:updated_time" content="2020-12-30T16:18:38.003Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="&lt;Dijkstra&gt; POJ 1062 Expensive Betrothal | OnE">
+<meta name="twitter:description" content="Link:poj.org/problem?id=1062   Brief DescriptionYou would like to trade an item $I_i$ with a person. You can either pay $P_i$ for this item, or you can give this person an item $I_j$ and pay $S_{ji}$">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">OnE</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          Algorithms Daily!
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">Blogs</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">About</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">Archive</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/iiyiyi" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">&lt;Dijkstra&gt; POJ 1062 Expensive Betrothal</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2020-12-30" class="post-meta__date date">2020-12-30</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; Category:
+            <a class="categories-link" href="/categories/Shortest-Paths/">Shortest Paths</a>
+            </font>
+          
+
+          
+             &#8226; Tag:
+            <font class="tags">
+              <a class="tags-link" href="/tags/Dijkstra/">Dijkstra</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p><strong>Link:</strong><a href="poj.org/problem?id=1062">poj.org/problem?id=1062</a>  </p>
+<h1 id="Brief-Description"><a href="#Brief-Description" class="headerlink" title="Brief Description"></a>Brief Description</h1><p>You would like to trade an item $I_i$ with a person. You can either pay $P_i$ for this item, or you can give this person an item $I_j$ and pay $S_{ji}$ for this item.<br>Every person you trade with have a rank $R_i$. If you trade with some one with rank $n$, then you cannot trade with any person whoe rank is grater than $n + m$.<br>How much money at least you have pay to buy item $I_1$?</p>
+<h1 id="Algorithm-Analysis"><a href="#Algorithm-Analysis" class="headerlink" title="Algorithm Analysis"></a>Algorithm Analysis</h1><p>First, we construct a node $v_0$. Consider each item as a node $v_i$. Link an edge from $v_0$ to each $v_i$. The length of the edge between $v_0$ and $v_i$ is $P_i$.<br>Then link an edge from $v_i$ to $v_j$ if we can give a person item $I_j$ and pay $S_{ji}$ to buy $I_i$. The length of the edge between such two nodes is $S_{ji}$.<br>Since we have constraints on the ranks, we can enumerate each node $v_i$ and assume that the highest rank in this trade is $R_i$. Hence, we cannot pass any node with rank outside the range<br>$[R_i - m, R_i]$. Then run a dijkstra to find the shortest path from $v_0$ to $v_1$.<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// Created by Yiyi on 2020/12/30.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;climits&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN = <span class="number">100</span> + <span class="number">5</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">trade</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> price, rank, cnt;</span><br><span class="line">    <span class="keyword">int</span> index[MAXN];</span><br><span class="line">    <span class="keyword">int</span> sale[MAXN];</span><br><span class="line">&#125; ob[MAXN];</span><br><span class="line"><span class="keyword">int</span> m, n, ans;</span><br><span class="line"><span class="keyword">int</span> <span class="built_in">map</span>[MAXN][MAXN];</span><br><span class="line"><span class="keyword">bool</span> vis[MAXN];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dijkstra</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> dis[MAXN];</span><br><span class="line">    priority_queue&lt;pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;,<span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; &gt; ,greater&lt;pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; &gt; &gt; que;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;=n ; i++) dis[i] = INT_MAX;</span><br><span class="line">    dis[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    que.push(pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;(dis[<span class="number">0</span>], <span class="number">0</span>));</span><br><span class="line">    <span class="keyword">while</span> (!que.empty())&#123;</span><br><span class="line">        <span class="keyword">int</span> head = que.top().second;</span><br><span class="line">        que.pop();</span><br><span class="line">        vis[head] = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (!vis[i] &amp;&amp; <span class="built_in">map</span>[head][i]!=INT_MAX &amp;&amp; dis[i] &gt; dis[head] + <span class="built_in">map</span>[head][i])&#123;</span><br><span class="line">                dis[i] = dis[head] + <span class="built_in">map</span>[head][i];</span><br><span class="line">                que.push(pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;(dis[i], i));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dis[<span class="number">1</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;m, &amp;n);</span><br><span class="line">    <span class="built_in">memset</span>(<span class="built_in">map</span>, <span class="number">127</span>, <span class="keyword">sizeof</span>(<span class="built_in">map</span>));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;ob[i].price, &amp;ob[i].rank, &amp;ob[i].cnt);</span><br><span class="line">        <span class="built_in">map</span>[<span class="number">0</span>][i] = ob[i].price;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; ob[i].cnt; j++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;ob[i].index[j], &amp;ob[i].sale[j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; ob[i].cnt; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">abs</span>(ob[i].rank - ob[ob[i].index[j]].rank) &lt;= m)</span><br><span class="line">                <span class="built_in">map</span>[ob[i].index[j]][i] = ob[i].sale[j];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    ans = INT_MAX;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)&#123;</span><br><span class="line">    <span class="comment">// enumerate each item and assume that the highest rank in this trade is ob[i].rank</span></span><br><span class="line">    <span class="comment">// therefore, the rank is [ob[i].rank - M, ob[i].rank]</span></span><br><span class="line">        <span class="built_in">memset</span>(vis, <span class="literal">false</span>, <span class="keyword">sizeof</span>(vis));</span><br><span class="line">        vis[<span class="number">0</span>] = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> maxRank = ob[i].rank;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">            <span class="keyword">if</span> (i!=j)</span><br><span class="line">                <span class="keyword">if</span> (ob[j].rank &gt; maxRank || ob[j].rank &lt; maxRank - m)</span><br><span class="line">                    vis[j] = <span class="literal">true</span>;</span><br><span class="line">        ans = min(ans, dijkstra());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">Copyright &copy; Yi Cai 2018</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
+</html>
