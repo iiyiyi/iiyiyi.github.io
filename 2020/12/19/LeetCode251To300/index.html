@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      LeetCode Solutions 251~300 | OnE 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="Yi Cai">
+    
+    
+
+    <meta name="description" content="Pay most attention to the problems with $\star$.   Problem 297: Serialize and Deserialize Binary Treehttps://leetcode.com/problems/serialize-and-deserialize-binary-tree/Method 1:  Use DFS to generate">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode Solutions 251~300 | OnE">
+<meta property="og:url" content="http://yoursite.com/child/2020/12/19/LeetCode251To300/index.html">
+<meta property="og:site_name" content="OnE">
+<meta property="og:description" content="Pay most attention to the problems with $\star$.   Problem 297: Serialize and Deserialize Binary Treehttps://leetcode.com/problems/serialize-and-deserialize-binary-tree/Method 1:  Use DFS to generate">
+<meta property="og:locale" content="EN/CN">
+<meta property="og:image" content="http://yc440.user.srcf.net/wp-content/uploads/2020/12/leetcode297_1.png">
+<meta property="og:updated_time" content="2020-12-29T15:56:47.151Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LeetCode Solutions 251~300 | OnE">
+<meta name="twitter:description" content="Pay most attention to the problems with $\star$.   Problem 297: Serialize and Deserialize Binary Treehttps://leetcode.com/problems/serialize-and-deserialize-binary-tree/Method 1:  Use DFS to generate">
+<meta name="twitter:image" content="http://yc440.user.srcf.net/wp-content/uploads/2020/12/leetcode297_1.png">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">OnE</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          Algorithms Daily!
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">Blogs</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">About</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">Archive</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/iiyiyi" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">LeetCode Solutions 251~300</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2020-12-19" class="post-meta__date date">2020-12-19</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; Category:
+            <a class="categories-link" href="/categories/LeetCode/">LeetCode</a>
+            </font>
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p><strong>Pay most attention to the problems with $\star$.  </strong></p>
+<h1 id="Problem-297-Serialize-and-Deserialize-Binary-Tree"><a href="#Problem-297-Serialize-and-Deserialize-Binary-Tree" class="headerlink" title="Problem 297: Serialize and Deserialize Binary Tree"></a>Problem 297: Serialize and Deserialize Binary Tree</h1><p><a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/" target="_blank" rel="noopener">https://leetcode.com/problems/serialize-and-deserialize-binary-tree/</a><br><strong>Method 1: </strong> Use DFS to generate the preorder of the tree.<br><img src="http://yc440.user.srcf.net/wp-content/uploads/2020/12/leetcode297_1.png" alt="297_preorder"><br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Codec</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    TreeNode* myDeserialize(string&amp; <span class="keyword">data</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">data</span>[<span class="number">0</span>] == <span class="string">'X'</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">data</span>.size() &gt; <span class="number">1</span>) <span class="keyword">data</span> = <span class="keyword">data</span>.substr(<span class="number">2</span>);</span><br><span class="line">            <span class="keyword">return</span> nullptr;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            int pos = <span class="keyword">data</span>.find(<span class="string">' '</span>);</span><br><span class="line">            string dataStr = <span class="keyword">data</span>.substr(<span class="number">0</span>, pos + <span class="number">1</span>);</span><br><span class="line">            TreeNode* root = new TreeNode(stoi(dataStr));</span><br><span class="line">            <span class="keyword">data</span> = <span class="keyword">data</span>.substr(pos + <span class="number">1</span>);</span><br><span class="line">            root-&gt;left = myDeserialize(<span class="keyword">data</span>);</span><br><span class="line">            root-&gt;right = myDeserialize(<span class="keyword">data</span>);</span><br><span class="line">            <span class="keyword">return</span> root;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">        </span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Encodes a tree to a single string.</span></span><br><span class="line">    string serialize(TreeNode* root) &#123;</span><br><span class="line">        <span class="keyword">if</span> (root == nullptr) <span class="keyword">return</span> <span class="string">"X"</span>;</span><br><span class="line">        <span class="keyword">return</span> to_string(root-&gt;<span class="keyword">val</span>) + <span class="string">" "</span> + serialize(root-&gt;left) + <span class="string">" "</span> + serialize(root-&gt;right);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Decodes your encoded data to tree.</span></span><br><span class="line">    TreeNode* deserialize(string <span class="keyword">data</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> myDeserialize(<span class="keyword">data</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Your Codec object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment">// Codec ser, deser;</span></span><br><span class="line"><span class="comment">// TreeNode* ans = deser.deserialize(ser.serialize(root));</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>Method 2:</strong> BFS<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Codec</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Encodes a tree to a single string.</span></span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">serialize</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="literal">nullptr</span>) <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">queue</span>&lt;TreeNode*&gt; que;</span><br><span class="line">        que.push(root);</span><br><span class="line">        <span class="built_in">string</span> serial = to_string(root-&gt;val);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (!que.empty())&#123;</span><br><span class="line">            TreeNode* hd = que.front();</span><br><span class="line">            que.pop();</span><br><span class="line">            <span class="keyword">if</span> (hd-&gt;left == <span class="literal">nullptr</span>)</span><br><span class="line">                serial += <span class="string">" X"</span>; </span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                serial += <span class="string">" "</span> + to_string(hd-&gt;left-&gt;val);</span><br><span class="line">                que.push(hd-&gt;left);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (hd-&gt;right == <span class="literal">nullptr</span>)</span><br><span class="line">                serial += <span class="string">" X"</span>;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                serial += <span class="string">" "</span> + to_string(hd-&gt;right-&gt;val);</span><br><span class="line">                que.push(hd-&gt;right);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> serial;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Decodes your encoded data to tree.</span></span><br><span class="line">    <span class="function">TreeNode* <span class="title">deserialize</span><span class="params">(<span class="built_in">string</span> data)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;TreeNode*&gt; t;</span><br><span class="line">        <span class="keyword">int</span> pos = data.find(<span class="string">' '</span>);</span><br><span class="line">        <span class="keyword">while</span> (pos != <span class="number">-1</span>)&#123;</span><br><span class="line">            <span class="built_in">string</span> cur = data.substr(<span class="number">0</span>, pos);</span><br><span class="line">            data = data.substr(pos + <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">if</span> (cur == <span class="string">"X"</span>) t.push_back(<span class="literal">nullptr</span>);</span><br><span class="line">            <span class="keyword">else</span> t.push_back(<span class="keyword">new</span> TreeNode(stoi(cur)));</span><br><span class="line">            pos = data.find(<span class="string">' '</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        t.push_back(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, j =<span class="number">1</span>; j &lt; t.size(); i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (t[i] == <span class="literal">nullptr</span>) <span class="keyword">continue</span>;</span><br><span class="line">            t[i]-&gt;left = t[j++];</span><br><span class="line">            t[i]-&gt;right = t[j++];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> t[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Your Codec object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment">// Codec ser, deser;</span></span><br><span class="line"><span class="comment">// TreeNode* ans = deser.deserialize(ser.serialize(root));</span></span><br></pre></td></tr></table></figure></p>
+
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">Copyright &copy; Yi Cai 2018</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
