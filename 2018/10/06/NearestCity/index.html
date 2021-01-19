@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      &lt;Binary Search&gt;Nearest Cities | OnE 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="Yi Cai">
+    
+    
+
+    <meta name="description" content="Link:https://algo.monster/problems/nearest_cities   Brief DescriptionThere are multiple cities in an ordinary Cartesian plane. Each city has a name and is located at an integral (x, y) coordinate inte">
+<meta name="keywords" content="Binary Search">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&lt;Binary Search&gt;Nearest Cities | OnE">
+<meta property="og:url" content="http://yoursite.com/child/2018/10/06/NearestCity/index.html">
+<meta property="og:site_name" content="OnE">
+<meta property="og:description" content="Link:https://algo.monster/problems/nearest_cities   Brief DescriptionThere are multiple cities in an ordinary Cartesian plane. Each city has a name and is located at an integral (x, y) coordinate inte">
+<meta property="og:locale" content="EN/CN">
+<meta property="og:updated_time" content="2021-01-19T07:31:40.181Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="&lt;Binary Search&gt;Nearest Cities | OnE">
+<meta name="twitter:description" content="Link:https://algo.monster/problems/nearest_cities   Brief DescriptionThere are multiple cities in an ordinary Cartesian plane. Each city has a name and is located at an integral (x, y) coordinate inte">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">OnE</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          Algorithms Daily!
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">Blogs</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">About</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">Archive</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/iiyiyi" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">&lt;Binary Search&gt;Nearest Cities</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2018-10-06" class="post-meta__date date">2018-10-06</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; Category:
+            <a class="categories-link" href="/categories/Binary-Search/">Binary Search</a>
+            </font>
+          
+
+          
+             &#8226; Tag:
+            <font class="tags">
+              <a class="tags-link" href="/tags/Binary-Search/">Binary Search</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p><strong>Link:</strong><a href="https://algo.monster/problems/nearest_cities" target="_blank" rel="noopener">https://algo.monster/problems/nearest_cities</a>  </p>
+<h1 id="Brief-Description"><a href="#Brief-Description" class="headerlink" title="Brief Description"></a>Brief Description</h1><p>There are multiple cities in an ordinary Cartesian plane. Each city has a name and is located at an integral (x, y) coordinate intersection.  Write an algorithm to determine the name of the nearest city that shares either an x or a y coordinate with the queried city. If no other cities share an x or y coordinate, return NONE. If two cities have the same distance to the queried city, q[i], consider the one with an alphabetically smaller name (i.e. ‘ab’ &lt; ‘aba’ &lt; ‘abb’) as the closest choice.</p>
+<h1 id="Algorithm-Analysis"><a href="#Algorithm-Analysis" class="headerlink" title="Algorithm Analysis"></a>Algorithm Analysis</h1><p>Use two <code>unordered_map&lt;int, vector&lt;int&gt;&gt;</code>s to store all the cities that shares the same x or y coordinate. Each time when we quried the nearest city, we can binary search on each unordered map.</p>
+<h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN = <span class="number">100000</span> + <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">City</span>&#123;</span></span><br><span class="line">    <span class="built_in">string</span> cityName;</span><br><span class="line">    <span class="keyword">int</span> x, y;</span><br><span class="line">&#125;;</span><br><span class="line">City cities[MAXN];</span><br><span class="line"><span class="built_in">unordered_map</span>&lt;<span class="built_in">string</span>, <span class="keyword">int</span>&gt; cityNameToIndex;</span><br><span class="line"><span class="built_in">unordered_map</span>&lt;<span class="keyword">int</span>, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; xToIndex;</span><br><span class="line"><span class="built_in">unordered_map</span>&lt;<span class="keyword">int</span>, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; yToIndex;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">cmpx</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span>&amp; a, <span class="keyword">const</span> <span class="keyword">int</span>&amp; b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (cities[a].y &lt; cities[b].y || (cities[a].y == cities[b].y &amp;&amp; cities[a].cityName &lt; cities[b].cityName));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">cmpy</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span>&amp; a, <span class="keyword">const</span> <span class="keyword">int</span>&amp; b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (cities[a].x &lt; cities[b].x || (cities[a].x == cities[b].x &amp;&amp; cities[a].cityName == cities[b].cityName));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sqr</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;<span class="keyword">return</span> x * x;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dist</span><span class="params">(<span class="keyword">int</span> indexA, <span class="keyword">int</span> indexB)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sqr(cities[indexA].x - cities[indexB].x) + sqr(cities[indexA].y - cities[indexB].y);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findNearestIndexSame</span><span class="params">(<span class="keyword">char</span> coordinate, <span class="keyword">int</span> index)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x = cities[index].x;</span><br><span class="line">    <span class="keyword">int</span> y = cities[index].y;</span><br><span class="line">    <span class="keyword">int</span> xy = (coordinate == <span class="string">'x'</span>) ? y : x;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; cityList = (coordinate == <span class="string">'x'</span>) ? xToIndex[x] : yToIndex[y];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (cityList.size() == <span class="number">1</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">int</span> l = <span class="number">0</span>, r = cityList.size();</span><br><span class="line">        <span class="keyword">int</span> m;</span><br><span class="line">        <span class="keyword">while</span> (l &lt; r)&#123;</span><br><span class="line">            m = (l + r) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">int</span> mxy = (coordinate == <span class="string">'x'</span>) ? cities[cityList[m]].y : cities[cityList[m]].x;</span><br><span class="line">            <span class="keyword">if</span> (mxy == xy) <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (mxy &lt; xy) l = m + <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> r = m;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (m == <span class="number">0</span>) <span class="keyword">return</span> cityList[m + <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (m == cityList.size() - <span class="number">1</span>) <span class="keyword">return</span> cityList[m - <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">int</span> a = cityList[m - <span class="number">1</span>], b = cityList[m + <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">int</span> distA = dist(a, index), distB = dist(b, index);</span><br><span class="line">            <span class="keyword">if</span> (distA &gt; distB) <span class="keyword">return</span> b;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (distA &lt; distB) <span class="keyword">return</span> a;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">return</span> (cities[a].cityName &lt; cities[b].cityName)? a : b;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;cities[i].cityName;</span><br><span class="line">        cityNameToIndex[cities[i].cityName] = i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;cities[i].x);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;cities[i].y);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span> (!xToIndex.count(cities[i].x)) xToIndex[cities[i].x] = <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;();</span><br><span class="line">        xToIndex[cities[i].x].push_back(i);</span><br><span class="line">        <span class="keyword">if</span> (!yToIndex.count(cities[i].y)) yToIndex[cities[i].y] = <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;();</span><br><span class="line">        yToIndex[cities[i].y].push_back(i);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">unordered_map</span>&lt;<span class="keyword">int</span>, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt;::iterator l;</span><br><span class="line">    <span class="keyword">for</span> (l = xToIndex.begin(); l!=xToIndex.end(); l++)</span><br><span class="line">        sort(l-&gt;second.begin(), l-&gt;second.end(), cmpx);</span><br><span class="line">    <span class="keyword">for</span> (l = yToIndex.begin(); l!=yToIndex.end(); l++)</span><br><span class="line">        sort(l-&gt;second.begin(), l-&gt;second.end(), cmpy);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++)&#123;</span><br><span class="line">        <span class="built_in">string</span> cityQueried;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;cityQueried;</span><br><span class="line">        <span class="keyword">int</span> nearestIndexSameX = findNearestIndexSame(<span class="string">'x'</span>, cityNameToIndex[cityQueried]);</span><br><span class="line">        <span class="keyword">int</span> nearestIndexSameY = findNearestIndexSame(<span class="string">'y'</span>, cityNameToIndex[cityQueried]);</span><br><span class="line">        <span class="keyword">if</span> (nearestIndexSameX == <span class="number">-1</span> &amp;&amp; nearestIndexSameY == <span class="number">-1</span>) <span class="built_in">cout</span> &lt;&lt;<span class="string">"NONE"</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (nearestIndexSameX == <span class="number">-1</span>) <span class="built_in">cout</span>&lt;&lt;cities[nearestIndexSameY].cityName;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (nearestIndexSameY == <span class="number">-1</span>) <span class="built_in">cout</span>&lt;&lt;cities[nearestIndexSameX].cityName;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (cities[nearestIndexSameX].cityName &lt; cities[nearestIndexSameY].cityName) <span class="built_in">cout</span>&lt;&lt;cities[nearestIndexSameX].cityName;</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;cities[nearestIndexSameY].cityName;</span><br><span class="line">        <span class="keyword">if</span> (i &lt; m - <span class="number">1</span>) <span class="built_in">cout</span>&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">Copyright &copy; Yi Cai 2018</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
